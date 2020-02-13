@@ -66,6 +66,7 @@ Output(countOne, countTwo, countThree,countFour,countFive,countSix,countSeven,co
 
 int prompt(void)
 {
+printf("How many time would you like to roll the 10 sided die? ");
 scanf("%d", &y);
 return y;
 }
@@ -84,5 +85,16 @@ return x;
 
 void Output (int countOne, int countTwo, int countThree,int countFour,int countFive,int countSix,int countSeven,int countEight,int countNine,int countTen)
 {
+printf("you had: \n");
+printf("%d ones \n", countOne);
+printf("%d twos \n", countTwo);
+printf("%d threes \n", countThree);
+printf("%d fours \n", countFour);
+printf("%d fives \n", countFive);
+printf("%d sixes \n", countSix);
+printf("%d sevens \n", countSeven);
+printf("%d eights \n",countEight);
+printf("%d nines \n", countNine);
+printf("%d tens \n", countTen);
 
 }
