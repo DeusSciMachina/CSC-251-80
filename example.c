@@ -6,7 +6,7 @@
 void printer(int rname[SIZE]);
 void filleven(int rname[SIZE]);
 void fillodd(int rname[SIZE]);
-void sortoddandeven(int rname[], int rname2[]);
+void swapoddandeven(int rname[], int rname2[]);
 
 int main(void)
 {
@@ -18,7 +18,7 @@ int main(void)
 	printer(arr);
 	fillodd(arr1);
 	printer(arr1);
-	sortoddandeven(arr, arr1);
+	swapoddandeven(arr, arr1);
 	printer(arr);
 	printer (arr1);
 	return EXIT_SUCCESS;
@@ -54,7 +54,7 @@ void fillodd(int rname[SIZE])
 		rname[i] = oddVal;
 	}	
 }
-void sortoddandeven(int rname[SIZE], int rname2[SIZE])
+void swapoddandeven(int rname[SIZE], int rname2[SIZE])
 {
 	int i;
 	for(i= 0; i < SIZE; i++)
@@ -63,6 +63,14 @@ void sortoddandeven(int rname[SIZE], int rname2[SIZE])
 		int temp2 = rname2[i];
 		rname[i] = temp2;
 		rname2[i] = temp;
+	}
+}
+void sortoddandeven(int rname[SIZE], int rname1[SIZE], int rname2[SIZE1])
+{
+	int i;
+	for(i =0; i< SIZE1; i++)
+	{
+	
 	}
 }
 
